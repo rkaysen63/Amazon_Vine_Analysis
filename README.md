@@ -1,14 +1,11 @@
-# Amazon_Vine_Analysis
-Big Data
+# Amazon Vine Analysis
 
 <p align="center">
-  <a href="#">Photo Name</a>
+  <a href="#">Amazon Watches</a>
   <br/><br/> 
-  <img src="images/Del_3/3_pop1_density.png" width="600">
+  <img src="images/amazon_watches.png" width="800">
 </p>
   
-
-
 ## Table of Contents
 * [Overview](https://github.com/rkaysen63/Amazon_Vine_Analysis/blob/master/README.md#overview)
 * [Resources](https://github.com/rkaysen63/Amazon_Vine_Analysis/blob/master/README.md#resources)
@@ -24,11 +21,13 @@ Big Data
   * pgAdmin platform to set up database tables and query data
   * AWS Console for big data management
   * Apache Spark to perform ETL on big data
+* Screen shot of watches from https://www.amazon.com/s?k=watches&ref=nb_sb_noss_1
 * Lesson Plan: UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 16 Challenge
 
 ## Overview:
+The Amazon Vine program uses Vine Voices to provide customers unbiased reviews of Amazon products.  Vine Voices are customers that are invited to join the program based on their reviewer rank.  The Vine members receive free products from Amazon that are provided by participating vendors, but vendors cannot influence, modify or edit the reviews.  More about Amazon Vine is available at https://www.amazon.com/gp/vine/help.
 
-Overview of the analysis: Explain the purpose of this analysis.
+Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) are organized by product category. The "Watches" dataset was selected for this analysis that proposes to determine if Amazon Vine members provide more favorable reviews than non-Vine members.
 
 ## Results:
 Results: Using bulleted lists and images of DataFrames as support, address the following questions:
