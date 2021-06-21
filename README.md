@@ -128,7 +128,6 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
 </p> 
 
 ### Analysis of Vine Reviews
-Results: Using bulleted lists and images of DataFrames as support, address the following questions:
 
 * Number of Reviews
   * There are 47 Vine reviews.
