@@ -130,9 +130,17 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
 ### Analysis of Vine Reviews
 Results: Using bulleted lists and images of DataFrames as support, address the following questions:
 
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+* Number of Reviews
+  * There are 47 Vine reviews.
+  * There are 8326 non-Vine reviews.
+
+* 5-Star Reviews
+  * Of the 47 Vine reviews, 15 received 5 stars.
+  * Of the 8326 non-Vine reviews, 4321 received 5 stars.
+
+* Percentage of 5-Star Reviews
+  * 32% of the Vine reviews received 5 stars.
+  * 52% of the non-Vine reviews received 5 stars.
 
 ## Summary:
 
