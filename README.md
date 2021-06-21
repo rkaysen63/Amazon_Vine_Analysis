@@ -66,23 +66,23 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
 <p align="center">
    <a href="#">schema</a>
   <br/><br/> 
-  <img src="images/del_1_etl/watches_database.png" width="400">
+  <img src="images/del_1_etl/watches_database.png" width="350">
    <br/><br/>  
   <a href="#">customers_table</a>
   <br/><br/> 
-  <img src="images/del_1_etl/customers_table.png" width="400">
+  <img src="images/del_1_etl/customers_table.png" width="350">
   <br/><br/> 
   <a href="#">products_table</a>
   <br/><br/> 
-  <img src="images/del_1_etl/products_table.png" width="400">
+  <img src="images/del_1_etl/products_table.png" width="350">
   <br/><br/>
   <a href="#">review_id_table</a>
   <br/><br/>   
-  <img src="images/del_1_etl/review_id_table.png" width="600">
+  <img src="images/del_1_etl/review_id_table.png" width="500">
   <br/><br/> 
   <a href="#">vine_table</a>
   <br/><br/> 
-  <img src="images/del_1_etl/vine_table.png" width="700">  
+  <img src="images/del_1_etl/vine_table.png" width="575">  
 </p>    
 
 ### Determine Bias of Vine Reviews
