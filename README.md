@@ -25,9 +25,11 @@
 * Lesson Plan: UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 16 Challenge
 
 ## Overview:
-The Amazon Vine program uses Vine Voices to provide customers unbiased reviews of Amazon products.  Vine Voices are customers that are invited to join the program based on their reviewer rank.  The Vine members receive free products from Amazon that are provided by participating vendors, but vendors cannot influence, modify or edit the reviews.  More about Amazon Vine is available at https://www.amazon.com/gp/vine/help.
+The Amazon Vine program uses Vine Voices to provide customers unbiased reviews of Amazon products.  Vine Voices are customers that are invited to join the program based on their reviewer rank.  The Vine members receive free products from Amazon that are provided by participating vendors, but vendors cannot influence, modify or edit the reviews.  More about Amazon Vine is available at https://www.amazon.com/gp/vine/help.<br/>
 
-Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) are organized by product category. The "Watches" dataset was selected for this analysis that proposes to determine if Amazon Vine members provide more favorable reviews than non-Vine members.
+Amazon's reviews datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) are organized by product category. The "Watches" reviews dataset was selected for this analysis.  The purpose of this analysis is to determine if Amazon Vine members truly provide unbiased reviews of Amazon products, per Amazon's claim.<br/>
+
+For the analysis, the Amazon reviews dataset for watches is extracted into a dataframe, `df`.  Then a smaller dataframe, `vine_df`, is created by selecting only 6 columns of the original `df`:  review_id, star_rating, helpful_votes, total_votes, vine, verified_purchase.  `vine_df` is filtered into a dataframe called `df_reviews20` that only includes rows where the total votes are 20 or more.  `df_reviews20` is filtered to create a dataframe called `df_helpful` where the number of helpful_votes divided by total_votes is equal to or greater than 50%.  Finally, `df_helpful` is divided into two dataframes:  `vine_Y_df` that contains only reviews by Vine members and `vine_N_df` that contains only reviews by non-Vine members.
 
 ## Results:
 ### ETL
@@ -143,8 +145,8 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
 
 ## Summary:
 
-Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+The results of the analysis show that there is no bias by Amazon Vine members toward favorable reviews.  Approximately 1/3 of the Vine members gave 5-star reviews for watches whereas half of non-Vine members gave 5-star reviews.
 
-
+Then, provide one additional analysis that you could do with the dataset to support your statement.
 
 [Back to the Table of Contents](https://github.com/rkaysen63/Amazon_Vine_Analysis/blob/master/README.md#table-of-contents)
