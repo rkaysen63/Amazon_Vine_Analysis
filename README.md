@@ -86,28 +86,47 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
 </p>    
 
 ### Determine Bias of Vine Reviews
-* There is a DataFrame or table for the vine_table data using one of three methods above (5 pt)
+
 <p align="center">
-  <a href="#">vine_df created from extracted and transformed Amazon Review "Watches" dataset</a>
+  <a href="#">DataFrame (vine_df) that is created by transforming a dataframe (df) that was extracted from an Amazon Reviews dataset.</a>
   <br/><br/> 
   <img src="images/del_1_etl/vine_df.png" width="800">  
 </p>    
-* The data is filtered to create a DataFrame or table where there are 20 or more total votes (5 pt)
+
 <p align="center">
-  <a href="#">df_reviews20 created from vine_df where there are 20 or more total votes</a>
+  <a href="#">DataFrame (df_reviews20) that is created from vine_df where there are 20 or more total votes.</a>
   <br/><br/> 
-  <img src="images/del_2_vine_analysis/df_reviews20.png" width="800">  
+  <img src="images/del_2_vine_analysis/df_reviews20.png" width="700">  
 </p>  
 
-* The data is filtered to create a DataFrame or table where the percentage of helpful_votes is equal to or greater than 50% (5 pt)
 <p align="center">
-  <a href="#">df_helpful created from df_reviews20 where the percentage of helpful_votes is equal to or greater than 50%</a>
+  <a href="#">Dataframe (df_helpful) that is created from df_reviews20 where the percentage of helpful_votes is equal to or greater than 50%</a>
   <br/><br/> 
-  <img src="images/del_2_vine_analysis/df_helpful.png" width="800">  
+  <img src="images/del_2_vine_analysis/df_helpful.png" width="700">  
 </p> 
-* The data is filtered to create a DataFrame or table where there is a Vine review (5 pt)
-* The data is filtered to create a DataFrame or table where there isn’t a Vine review (5 pt)
+
+<p align="center">
+  <a href="#">Dataframe (vine_Y_df) is created where there are Vine reviews.</a>
+  <br/><br/> 
+  <img src="images/del_2_vine_analysis/vine_Y_df.png" width="700">  
+</p> 
+
+<p align="center">
+  <a href="#">Dataframe (vine_N_df) is created where reviews are not Vine reviews.</a>
+  <br/><br/> 
+  <img src="images/del_2_vine_analysis/vine_N_df.png" width="700">  
+</p> 
 * The total number of reviews, the number of 5-star reviews, and the percentage 5-star reviews are calculated for all Vine and non-Vine reviews (15 pt)
+
+<p align="center">
+  <a href="#">Pecentage of 5-Star reviews of total Vine reviews.</a>
+  <br/><br/> 
+  <img src="images/del_2_vine_analysis/Y_percent_5star.png" width="700">
+  <br/><br/> 
+  <a href="#">Pecentage of 5-Star reviews of total non-Vine reviews.</a>
+  <br/><br/> 
+  <img src="images/del_2_vine_analysis/Y_percent_5star.png" width="700">  
+</p> 
 
 ### Analysis of Vine Reviews
 Results: Using bulleted lists and images of DataFrames as support, address the following questions:
