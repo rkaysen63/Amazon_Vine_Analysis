@@ -34,13 +34,13 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
 
 * **Extract:**<br/>
 <p align="center">
-  <a href="#">Extract Amazon Review Dataset, "Watches", as a Dataframe</a>
+  <a href="#">Extract Amazon Review Dataset, "Watches", as a Dataframe (df)</a>
   <br/><br/> 
   <img src="images/del_1_etl/df.png" width="1200">
 </p>    
 
 * **Transform:**<br/>
-  Transform the dataframe extracted from Amazon into four dataframes: **customers_df, products_df, review_id_df, vine_df**      
+  Transform df into four dataframes: **customers_df, products_df, review_id_df, vine_df**      
   
 <p align="center">
   <a href="#">customers_df</a>
@@ -61,7 +61,7 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
 </p>   
 
 * **Load:**<br/>
-  Load four dataframes into respective tables in pgAdmin:  **customers_table, products_table, review_id_table, vine_table**    
+  Load the four dataframes into respective tables in pgAdmin:  **customers_table, products_table, review_id_table, vine_table**    
 
 <p align="center">
    <a href="#">schema</a>
@@ -88,35 +88,34 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
 ### Determine Bias of Vine Reviews
 
 <p align="center">
-  <a href="#">DataFrame (vine_df) that is created by transforming a dataframe (df) that was extracted from an Amazon Reviews dataset.</a>
+  <a href="#">DataFrame (vine_df) created by transforming a dataframe (df) that was extracted from an Amazon Reviews dataset for Watches</a>
   <br/><br/> 
   <img src="images/del_1_etl/vine_df.png" width="800">  
 </p>    
 
 <p align="center">
-  <a href="#">DataFrame (df_reviews20) that is created from vine_df where there are 20 or more total votes.</a>
+  <a href="#">DataFrame (df_reviews20) created from vine_df where there are 20 or more total votes</a>
   <br/><br/> 
   <img src="images/del_2_vine_analysis/df_reviews20.png" width="700">  
 </p>  
 
 <p align="center">
-  <a href="#">Dataframe (df_helpful) that is created from df_reviews20 where the percentage of helpful_votes is equal to or greater than 50%</a>
+  <a href="#">Dataframe (df_helpful) created from df_reviews20 where the percentage of helpful_votes is equal to or greater than 50%</a>
   <br/><br/> 
   <img src="images/del_2_vine_analysis/df_helpful.png" width="700">  
 </p> 
 
 <p align="center">
-  <a href="#">Dataframe (vine_Y_df) is created where there are Vine reviews.</a>
+  <a href="#">Dataframe (vine_Y_df) that only includes Vine reviews</a>
   <br/><br/> 
   <img src="images/del_2_vine_analysis/vine_Y_df.png" width="700">  
 </p> 
 
 <p align="center">
-  <a href="#">Dataframe (vine_N_df) is created where reviews are not Vine reviews.</a>
+  <a href="#">Dataframe (vine_N_df) that only includes non-Vine reviews</a>
   <br/><br/> 
   <img src="images/del_2_vine_analysis/vine_N_df.png" width="700">  
 </p> 
-* The total number of reviews, the number of 5-star reviews, and the percentage 5-star reviews are calculated for all Vine and non-Vine reviews (15 pt)
 
 <p align="center">
   <a href="#">Pecentage of 5-Star reviews of total Vine reviews.</a>
@@ -125,7 +124,7 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
   <br/><br/> 
   <a href="#">Pecentage of 5-Star reviews of total non-Vine reviews.</a>
   <br/><br/> 
-  <img src="images/del_2_vine_analysis/Y_percent_5star.png" width="700">  
+  <img src="images/del_2_vine_analysis/N_percent_5star.png" width="700">  
 </p> 
 
 ### Analysis of Vine Reviews
