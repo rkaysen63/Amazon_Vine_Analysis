@@ -87,8 +87,24 @@ Amazon's review datasets (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.
 
 ### Determine Bias of Vine Reviews
 * There is a DataFrame or table for the vine_table data using one of three methods above (5 pt)
+<p align="center">
+  <a href="#">vine_df created from extracted and transformed Amazon Review "Watches" dataset</a>
+  <br/><br/> 
+  <img src="images/del_1_etl/vine_df.png" width="800">  
+</p>    
 * The data is filtered to create a DataFrame or table where there are 20 or more total votes (5 pt)
+<p align="center">
+  <a href="#">df_reviews20 created from vine_df where there are 20 or more total votes</a>
+  <br/><br/> 
+  <img src="images/del_2_vine_analysis/df_reviews20.png" width="800">  
+</p>  
+
 * The data is filtered to create a DataFrame or table where the percentage of helpful_votes is equal to or greater than 50% (5 pt)
+<p align="center">
+  <a href="#">df_helpful created from df_reviews20 where the percentage of helpful_votes is equal to or greater than 50%</a>
+  <br/><br/> 
+  <img src="images/del_2_vine_analysis/df_helpful.png" width="800">  
+</p> 
 * The data is filtered to create a DataFrame or table where there is a Vine review (5 pt)
 * The data is filtered to create a DataFrame or table where there isn’t a Vine review (5 pt)
 * The total number of reviews, the number of 5-star reviews, and the percentage 5-star reviews are calculated for all Vine and non-Vine reviews (15 pt)
