@@ -13,7 +13,9 @@
 * [Summary](https://github.com/rkaysen63/Amazon_Vine_Analysis/blob/master/README.md#summary)
 
 ## Resources:    
-* Data: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Watches_v1_00.tsv.gz
+* Data: 
+  *  https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Watches_v1_00.tsv.gz
+  *  2nd set for additional analyis: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Furniture_v1_00.tsv.gz
 * Tools: 
   * Python
   * Colaboratory (Colab) notebook for writing code
