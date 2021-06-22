@@ -147,11 +147,22 @@ For the analysis, the Amazon reviews dataset for watches is extracted into a dat
 
 Taken at face value, the results of this analysis show no bias by Amazon Vine members toward favorable reviews.  Approximately 1/3 of the Vine members gave 5-star reviews for watches whereas half of non-Vine members gave 5-star reviews.  However the following should be considered:
 1. The total transformed dataset includes 8373 reviews.  The Vine reviews make-up less than 1% of all the reviews.  In other words, it's a very small dataset from which to draw conclusions.
-2. The transformed dataframe, df_helpful, was filtered even further to include only those reviews where purchases were verified.  The number of Vine reviews decreased from a small number to non-existent.  In other words, the 47 5-star reviews by Vine members were possibly written about items that they had not purchased, which undermines the validity of their reviews.
-3. This analysis evaluates only one of approximately 50 Amazon reviews datasets.  Perhaps evaluation of several datasets would give more clarity. 
+2. The transformed dataframe, df_helpful, was filtered even further to include only those reviews where purchases were verified.  The number of Vine reviews decreased from a small number, 47, to 0.  In other words, the 47 5-star reviews by Vine members were possibly written about items that they had not purchased, which undermines the validity of their reviews.
 
-Upon further analysis, however, the results are questionable.  If the review data is filtered to include only reviews where purchases were verified, prior to splitting it between Vine and non-Vine, the dataset is reduced by 
+<p align="center">
+  <img src="additional_analysis/verified_df.png" width="700">  
+</p> 
 
-Then, provide one additional analysis that you could do with the dataset to support your statement.
+3. This analysis evaluates only one of approximately 50 Amazon reviews datasets.  It might be worth analyzing several before reaching any conclusions about bias. 
+
+A second dataset, furniture reviews, was quickly reviewed to see how the results compare.  A little over 1/2 of the Vine members gave 5-star reviews for Amazon furniture products.  A little under 1/2 of the non-vine members gave 5-star reviews for Amazon furniture products.  The vine reviews make up only
+
+<p align="center">
+  <img src="additional_analysis/furniture_Y_percent_5star.png" width="700">
+  <br/><br/> 
+  <img src="additional_analysis/furniture_N_percent_5star.png" width="700">  
+  <br/><br/> 
+  <img src="additional_analysis/verified_furniture_df.png" width="700">  
+</p><br/>
 
 [Back to the Table of Contents](https://github.com/rkaysen63/Amazon_Vine_Analysis/blob/master/README.md#table-of-contents)
