@@ -145,7 +145,12 @@ For the analysis, the Amazon reviews dataset for watches is extracted into a dat
 
 ## Summary:
 
-The results of the analysis show that there is no bias by Amazon Vine members toward favorable reviews.  Approximately 1/3 of the Vine members gave 5-star reviews for watches whereas half of non-Vine members gave 5-star reviews.
+Taken at face value, the results of this analysis show no bias by Amazon Vine members toward favorable reviews.  Approximately 1/3 of the Vine members gave 5-star reviews for watches whereas half of non-Vine members gave 5-star reviews.  However the following should be considered:
+1. The total transformed dataset includes 8373 reviews.  The Vine reviews make-up less than 1% of all the reviews.  In other words, it's a very small dataset from which to draw conclusions.
+2. The transformed dataframe, df_helpful, was filtered even further to include only those reviews where purchases were verified.  The number of Vine reviews decreased from a small number to non-existent.  In other words, the 47 5-star reviews by Vine members were possibly written about items that they had not purchased, which undermines the validity of their reviews.
+3. This analysis evaluates only one of approximately 50 Amazon reviews datasets.  Perhaps evaluation of several datasets would give more clarity. 
+
+Upon further analysis, however, the results are questionable.  If the review data is filtered to include only reviews where purchases were verified, prior to splitting it between Vine and non-Vine, the dataset is reduced by 
 
 Then, provide one additional analysis that you could do with the dataset to support your statement.
 
