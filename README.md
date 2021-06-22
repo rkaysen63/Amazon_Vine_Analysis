@@ -146,7 +146,7 @@ For the analysis, the Amazon reviews dataset for watches is extracted into a dat
 ## Summary:
 
 Taken at face value, the results of this analysis show no bias by Amazon Vine members toward favorable reviews.  Approximately 1/3 of the Vine members gave 5-star reviews for watches whereas half of non-Vine members gave 5-star reviews.  However the following should be considered:
-1. The total transformed dataset includes 8373 reviews.  The Vine reviews make-up less than 1% of all the reviews.  In other words, it's a very small dataset from which to draw conclusions.
+1. The total transformed dataset includes 8373 reviews.  The Vine reviews madeup less than 1% of all the reviews.  In other words, it's a very small dataset from which to draw conclusions.
 2. The transformed dataframe, df_helpful, was filtered even further to include only those reviews where purchases were verified.  The number of Vine reviews decreased from a small number, 47, to 0.  In other words, the 47 5-star reviews by Vine members were possibly written about items that they had not purchased, which undermines the validity of their reviews.
 
 <p align="center">
@@ -155,7 +155,7 @@ Taken at face value, the results of this analysis show no bias by Amazon Vine me
 
 3. This analysis evaluates only one of approximately 50 Amazon reviews datasets.  It might be worth analyzing several before reaching any conclusions about bias. 
 
-A second dataset, furniture reviews, was quickly reviewed to see how the results compare.  A little over 1/2 of the Vine members gave 5-star reviews for Amazon furniture products.  A little under 1/2 of the non-vine members gave 5-star reviews for Amazon furniture products.  The vine reviews make up only
+A second review dataset, furniture reviews, was extracted to a dataframe and transformed inorder to see how the results compare.  A little over 1/2 of the Vine members gave 5-star reviews for Amazon furniture products.  A little under 1/2 of the non-vine members gave 5-star reviews for Amazon furniture products.  Again, no apparent bias based on face value.  The furniture dataset was approximately double the size of the watches dataset.  Similar to the watches dataset, the Vine reviews made up less than 1% of all the reviews. When filtered even further to select only those reviews where purchases were verified, the Vine reviews dropped significantly.  The Vine dataframe was reduced to 3 rows and only 2 of those rows had 5-star reviews.
 
 <p align="center">
   <img src="additional_analysis/furniture_Y_percent_5star.png" width="700">
