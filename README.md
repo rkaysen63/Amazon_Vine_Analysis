@@ -172,7 +172,7 @@ Finally, finally, I looked at the poor reviews of both datasets.  Please refer t
 <p align="center">
   <img src="additional_analysis/watches_poor_reviews.png" width="650">
   <br/><br/> 
-  <img src="additional_analysis/furniture_poor_reviews.png" width="720">   
+  <img src="additional_analysis/furniture_poor_reviews.png" width="800">   
 </p><br/>
 
 In conclusion, the data does not completely refute Amazon's claim that Vine Voices provide unbiased reviews, but it does appear that there is bias by Vine reviewers to give more favorable reviews than not.  At face value the results show highly favorable Vine reviews to be about the same or less than non-Vine reviews, possibly indicating no bias.  When the requirement of "verification of purchase" is considered, there's no or almost no Vine reviews to analyze, suggesting Vine bias because it would appear that Vine Voices are giving highly favorable reviews to products that they had not purchased and possibly have never tried.  Furthermore, when poor reviews are analyzed, it's clear that Vine Voices are more reluctant than non-Vine "voices" to give products a poor review.
