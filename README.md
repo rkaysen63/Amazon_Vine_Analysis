@@ -167,7 +167,7 @@ A second review dataset, furniture reviews, was extracted to a dataframe and tra
   <img src="additional_analysis/verified_furniture_df.png" width="700">  
 </p><br/>
 
-Finally, finally, I looked at the poor reviews of both datasets.  Please refer to the images below.  For both datasets, the poor Vine reviews was much less than the poor non-Vine reviews.  For the "Watches" dataset 11% of the Vine reviews gave 1 or 2 stars whereas 23% of the non-Vine reviews gave 1 or 2 stars.  For the "Furniture" dataset, the desparity was greater.  Only 1% of the Vine reviews gave 1 or 2 stars whereas 26% of the non-Vine reviews, roughly the same percentage found in the "Watches" reviews", gave 1 or 2 stars.
+Finally, poor reviews of both datasets was analyzed.  Please refer to the images below.  For both datasets, the poor Vine reviews, that is reviews rated 1 or 2 stars, were much less than the poor non-Vine reviews.  For the "Watches" dataset, poor Vine reviews were about half of the poor non-Vine reviews.  For the "Furniture" dataset, the desparity was greater.  Poor Vine reviews gave 1 or 2 stars whereas 26% of the non-Vine reviews, roughly the same percentage found in the "Watches" reviews", gave 1 or 2 stars.
 
 <p align="center">
   <img src="additional_analysis/watches_poor_reviews.png" width="650">
