@@ -155,9 +155,7 @@ Taken at face value, the results of this analysis show no bias by Amazon Vine me
   <img src="additional_analysis/verified_df.png" width="700">  
 </p> 
 
-3. This analysis evaluates only one of approximately 50 Amazon reviews datasets.  It might be worth analyzing several before reaching any conclusions about bias. 
-
-A second review dataset, furniture reviews, was extracted to a dataframe and transformed in order to see how the results compare.  Please refer to the images below. A little over 1/2 of the Vine members gave 5-star reviews for Amazon furniture products.  A little under 1/2 of the non-vine members gave 5-star reviews for Amazon furniture products.  Again, no apparent bias based on face value.  The furniture dataset was approximately double the size of the watches dataset.  Similar to the watches dataset, the Vine reviews made up less than 1% of all the reviews. When filtered even further to select only those reviews where purchases were verified, the Vine reviews dropped significantly.  The Vine dataframe was reduced to only 3 rows and only 2 of those rows had 5-star reviews.  Again, this result casts doubt on the validity of Vine reviews.
+3. This analysis evaluates only one of approximately 50 Amazon reviews datasets.  It might be worth analyzing another set of data before reaching any conclusions about bias. A second review dataset, furniture reviews, was extracted to a dataframe and transformed in order to see how the results compare.  Please refer to the images below. A little over 1/2 of the Vine members gave 5-star reviews for Amazon furniture products.  A little under 1/2 of the non-vine members gave 5-star reviews for Amazon furniture products.  Again, no apparent bias based on face value.  The furniture dataset was approximately double the size of the watches dataset.  Similar to the watches dataset, the Vine reviews made up less than 1% of all the reviews. When filtered even further to select only those reviews where purchases were verified, the Vine reviews dropped significantly.  The Vine dataframe was reduced to only 3 rows and only 2 of those rows had 5-star reviews.  Again, this result casts doubt on the validity of Vine reviews.
 
 <p align="center">
   <img src="additional_analysis/furniture_Y_percent_5star.png" width="700">
@@ -167,7 +165,7 @@ A second review dataset, furniture reviews, was extracted to a dataframe and tra
   <img src="additional_analysis/verified_furniture_df.png" width="700">  
 </p><br/>
 
-Finally, poor reviews of both datasets was analyzed.  Please refer to the images below.  For both datasets, the poor Vine reviews, that is reviews rated 1 or 2 stars, were much less than the poor non-Vine reviews.  For the "Watches" dataset, poor Vine reviews were about half of the poor non-Vine reviews.  For the "Furniture" dataset, the desparity was greater.  Poor Vine reviews gave 1 or 2 stars whereas 26% of the non-Vine reviews, roughly the same percentage found in the "Watches" reviews", gave 1 or 2 stars.
+4. The original analysis only looks at favorable reviews.  What do poor reviews have to say?  To answer that question, poor reviews of both datasets were analyzed.  Please refer to the images below.  For both datasets, the poor Vine reviews, that is reviews rated 1 or 2 stars, were much less than the poor non-Vine reviews.  For the "Watches" dataset, poor Vine reviews were about half of the poor non-Vine reviews.  For the larger "Furniture" reviews dataset, the desparity was even greater.  For the "Furniture" reviews dataset only 1% of the Vine reviews are poor, wherease 26% of the non-Vine reviews were poor.  The percentage of poor non-Vine reviews for both datasets is roughly the same.
 
 <p align="center">
   <img src="additional_analysis/watches_poor_reviews.png" width="650">
@@ -175,7 +173,7 @@ Finally, poor reviews of both datasets was analyzed.  Please refer to the images
   <img src="additional_analysis/furniture_poor_reviews.png" width="800">   
 </p><br/>
 
-In conclusion, the data does not completely refute Amazon's claim that Vine Voices provide unbiased reviews, but it does appear that there is bias by Vine reviewers to give more favorable reviews than not.  At face value the results show highly favorable Vine reviews to be about the same or less than non-Vine reviews, possibly indicating no bias.  When the requirement of "verification of purchase" is considered, there's no or almost no Vine reviews to analyze, suggesting Vine bias because it would appear that Vine Voices are giving highly favorable reviews to products that they had not purchased and possibly have never tried.  Furthermore, when poor reviews are analyzed, it's clear that Vine Voices are more reluctant than non-Vine "voices" to give products a poor review.
+In conclusion, the data does not absolutely refute Amazon's claim that Vine Voices provide unbiased reviews, but it does appear that there is bias by Vine reviewers to give more favorable reviews than not.  At face value the results show highly favorable Vine reviews to be about the same or less than non-Vine reviews, possibly indicating no bias.  But, when the requirement of "verification of purchase" is considered, there's no or almost no Vine reviews to analyze, suggesting Vine bias because it would appear that Vine Voices are giving highly favorable reviews to products that they had not purchased and possibly have never tried.  Furthermore, when poor reviews are analyzed, it's clear that Vine Voices are more reluctant to give products a poor review than non-Vine "voices".
 
 
 [Back to the Table of Contents](https://github.com/rkaysen63/Amazon_Vine_Analysis/blob/master/README.md#table-of-contents)
